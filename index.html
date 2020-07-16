@@ -12,9 +12,28 @@
     <body>
         <h2>Calcola il prezzo del tuo biglietto</h2>
         <section id="alwaysVisible">
-            <div class="dataCol colName"></div>
-            <div class="dataCol colKm"></div>
-            <div class="dataCol colEta"></div>
+            <section id="dataArea">
+                <div class="dataCol colName">
+                    <h4>Nome e Cognome</h4>
+                    <input type="text" name="" value="" placeholder="Nome e cognome">
+                </div>
+                <div class="dataCol colKm">
+                    <h4>Km da percorrere</h4>
+                    <input type="number" name="" value="" placeholder="Km">
+                </div>
+                <div class="dataCol colEta">
+                    <h4>Fascia d'età</h4>
+                    <select>
+                        <option value="0">Minorenne</option>
+                        <option value="1">Maggiorenne</option>
+                        <option value="2">Over 65</option>    
+                    </select>
+                </div>
+            </section>
+            <section id="buttonArea">
+                <button type="button" name="button">Genera</button>
+                <button type="button" name="button">Annulla</button>
+            </section>
         </section>
         <h2>Il tuo biglietto</h2>
         <section id="visibleAtClick">

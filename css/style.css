@@ -27,6 +27,11 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 11px #000000;
+    overflow: hidden;
+}
+
+#dataArea {
+    height: 80%;
     display: flex;
     justify-content: center;
 }
@@ -43,4 +48,50 @@ h2 {
     width: 25%;
     height: 100%;
     border: 1px solid red;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dataCol input {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #cc0066;
+    padding: 0 5px;
+}
+
+h4 {
+    color: #cc0066;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#buttonArea {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+#buttonArea button {
+    width: 80px;
+    height: 30px;
+    color: #cc0066;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0 20px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#buttonArea button:hover {
+    background-color: grey;
+    border: 1px solid #cc0066;
+    cursor: pointer;
+    color: lightgrey;
 }
