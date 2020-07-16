@@ -21,17 +21,20 @@ body {
     flex-direction: column;
 }
 
-#alwaysVisible {
+.infoSpace {
     width: 800px;
-    height: 300px;
+    height: 200px;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 11px #000000;
     overflow: hidden;
 }
 
+.infoTop {
+    border-radius: 10px;
+    box-shadow: 0 0 11px #000000;
+}
+
 #dataArea {
-    height: 80%;
+    height: 70%;
     display: flex;
     justify-content: center;
 }
@@ -47,14 +50,14 @@ h2 {
 .dataCol {
     width: 25%;
     height: 100%;
-    border: 1px solid red;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.dataCol input {
+.dataCol input,
+.dataCol select {
     width: 90%;
     height: 30px;
     border-radius: 5px;
@@ -65,16 +68,15 @@ h2 {
 h4 {
     color: #cc0066;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
 #buttonArea {
-    height: 20%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
 }
 
 #buttonArea button {
@@ -94,4 +96,47 @@ h4 {
     border: 1px solid #cc0066;
     cursor: pointer;
     color: lightgrey;
+}
+
+.infoBottom {
+    padding: 10px 20px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+#passengerData {
+    height: 80%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: flex;
+}
+
+.passCol {
+    width: 20%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.passName {
+    width: 25%;
+    background-color: grey;
+}
+
+.datoInserito {
+    font-size: 16px;
+    font-weight: 300;
 }
