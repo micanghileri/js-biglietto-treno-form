@@ -3,6 +3,7 @@ var btnAnnulla = document.getElementById('btnAnnulla');
 
 // click bottone genera
 btnGenera.addEventListener("click", function() {
+    document.getElementById('visibleAtClick').className += 'show';
     var nome = document.getElementById('passenger').value;
     var km = document.getElementById('km').value;
     var age = document.getElementById('age').value;
@@ -31,5 +32,6 @@ btnGenera.addEventListener("click", function() {
 // click bottone annulla
 btnAnnulla.addEventListener("click", function() {
     location.reload();
+    document.getElementById('visibleAtClick').className += 'hidden';
 }
 );

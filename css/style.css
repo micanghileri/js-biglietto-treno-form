@@ -25,7 +25,6 @@ body {
     width: 800px;
     height: 200px;
     background-color: #ffffff;
-    overflow: hidden;
 }
 
 .infoTop {
@@ -145,4 +144,14 @@ h5 {
     font-size: 16px;
     font-weight: 300;
     text-transform: capitalize;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.2s;
 }
